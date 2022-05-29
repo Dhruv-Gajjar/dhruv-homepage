@@ -74,7 +74,7 @@ const Contact = () => {
                         <form action="POST" data-netlify="true">
                             <Flex w="100%" align="left" justify="space-between">
                                 <Box pb={4} pr={4}>
-                                    <lable for="email">Name</lable>
+                                    <lable htmlFor="email">Name</lable>
                                     <Input
                                         type="text"
                                         name="name"
@@ -84,7 +84,7 @@ const Contact = () => {
                                 </Box>
 
                                 <Box pb={4}>
-                                    <lable for="email">Email</lable>
+                                    <lable htmlFor="email">Email</lable>
                                     <Input
                                         type="text"
                                         name="email"
@@ -94,7 +94,7 @@ const Contact = () => {
                                 </Box>
                             </Flex>
                             <Box pb={4}>
-                                <lable for="message">Message</lable>
+                                <lable htmlFor="message">Message</lable>
                                 <Textarea
                                     type="text"
                                     name="message"

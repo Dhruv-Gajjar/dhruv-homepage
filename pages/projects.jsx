@@ -15,7 +15,7 @@ import { BsFillEyeFill } from "react-icons/bs";
 
 const Projects = () => {
     return (
-        <Box w="100%" id="projects" pt={10} pb={6} id="projects">
+        <Box w="100%" pt={10} pb={6} id="projects">
             <Heading pb={6} as="h2" variant="section-title">
                 Projects
             </Heading>
