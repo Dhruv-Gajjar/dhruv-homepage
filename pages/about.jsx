@@ -12,7 +12,7 @@ import Image1 from "../public/images/html.png";
 
 const About = () => {
     return (
-        <Box w="100%" h="auto" id="about" pb={6}>
+        <Box w="100%" h="auto" id="about" pt={10} pb={6} zIndex={1}>
             <Heading pb={6} as="h2" variant="section-title">
                 About Me
             </Heading>
@@ -25,7 +25,7 @@ const About = () => {
                 pb={6}
             >
                 <GridItem colSpan={3}>
-                    <Text>
+                    <Text fontSize="lg">
                         An individual who is inclined to help and bring
                         creativity to the team as well as in his work. Over
                         these years I have learned to stay calm under work

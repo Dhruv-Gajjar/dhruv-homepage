@@ -13,13 +13,13 @@ import {
 
 const Skills = () => {
     return (
-        <Box w="100%" pb={6} id="skills">
+        <Box w="100%" pt={10} pb={6} id="skills">
             <Container w="100%" maxW="container.md">
                 <Heading as="h1" variant="section-title" pb={3}>
                     Skills
                 </Heading>
                 <Heading as="h3" size="lg" font="bold" pb={6}>
-                    Launguages And Tools I Use
+                    Languages & Tools I Use
                 </Heading>
                 <Stack align="center" justify="center" wrap="wrap" pb={6}>
                     <SimpleGrid

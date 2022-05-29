@@ -71,16 +71,16 @@ const Navbar = (props) => {
                     align="center"
                     flexGrow={1}
                 >
-                    <LinkItem href="#about" path={path}>
+                    <LinkItem href="/#about" path={path}>
                         About
                     </LinkItem>
-                    <LinkItem href="#skills" path={path}>
+                    <LinkItem href="/#skills" path={path}>
                         Skills
                     </LinkItem>
-                    <LinkItem href="#projects" path={path}>
+                    <LinkItem href="/#projects" path={path}>
                         Projects
                     </LinkItem>
-                    <LinkItem href="#contact" path={path}>
+                    <LinkItem href="/#contact" path={path}>
                         Contact
                     </LinkItem>
                 </Stack>
@@ -95,16 +95,16 @@ const Navbar = (props) => {
                                 variant="outline"
                             />
                             <MenuList>
-                                <NextLink href="#about">
+                                <NextLink href="/#about">
                                     <MenuItem as={Link}>About</MenuItem>
                                 </NextLink>
-                                <NextLink href="#skills">
+                                <NextLink href="/#skills">
                                     <MenuItem as={Link}>Skills</MenuItem>
                                 </NextLink>
-                                <NextLink href="#projects">
+                                <NextLink href="/#projects">
                                     <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
-                                <NextLink href="#contact">
+                                <NextLink href="/#contact">
                                     <MenuItem as={Link}>Contact</MenuItem>
                                 </NextLink>
                             </MenuList>
