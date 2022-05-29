@@ -48,6 +48,7 @@ const Contact = () => {
                                     <a
                                         href="https://github.com/Dhruv-Gajjar"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <AiFillGithub size={25} />
                                     </a>
@@ -57,6 +58,7 @@ const Contact = () => {
                                     <a
                                         href="https://twitter.com/DhruvGajjar_7"
                                         target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         <AiFillTwitterCircle size={25} />
                                     </a>

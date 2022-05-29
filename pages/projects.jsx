@@ -69,6 +69,7 @@ const Projects = () => {
                     <a
                         href="https://github.com/Dhruv-Gajjar/dhruv-homepage"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <Button
                             align="center"
@@ -80,14 +81,15 @@ const Projects = () => {
                             View Scource
                         </Button>
                     </a>
-
-                    <Button
-                        align="center"
-                        leftIcon={<BsFillEyeFill />}
-                        colorScheme="teal"
-                    >
-                        Live Demo
-                    </Button>
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                        <Button
+                            align="center"
+                            leftIcon={<BsFillEyeFill />}
+                            colorScheme="teal"
+                        >
+                            Live Demo
+                        </Button>
+                    </a>
                 </GridItem>
 
                 <GridItem>
@@ -138,6 +140,7 @@ const Projects = () => {
                     <a
                         href="https://github.com/Dhruv-Gajjar/design-website"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <Button
                             align="center"
@@ -150,7 +153,11 @@ const Projects = () => {
                         </Button>
                     </a>
 
-                    <a href="https://design-one.vercel.app/" target="_blank">
+                    <a
+                        href="https://design-one.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <Button
                             align="center"
                             leftIcon={<BsFillEyeFill />}
