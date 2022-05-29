@@ -17,7 +17,7 @@ const Logo = () => {
     const logoImg = "/images/logo.svg";
 
     return (
-        <Link href="/" scroll={false}>
+        <Link href="#home" scroll={false}>
             <a>
                 <LogoBox>
                     <Image src={logoImg} alt="logo" width={20} height={20} />

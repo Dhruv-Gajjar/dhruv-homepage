@@ -71,11 +71,14 @@ const Navbar = (props) => {
                     align="center"
                     flexGrow={1}
                 >
-                    <LinkItem href="#projects" path={path}>
-                        Projects
-                    </LinkItem>
                     <LinkItem href="#about" path={path}>
                         About
+                    </LinkItem>
+                    <LinkItem href="#skills" path={path}>
+                        Skills
+                    </LinkItem>
+                    <LinkItem href="#projects" path={path}>
+                        Projects
                     </LinkItem>
                     <LinkItem href="#contact" path={path}>
                         Contact
@@ -92,11 +95,14 @@ const Navbar = (props) => {
                                 variant="outline"
                             />
                             <MenuList>
-                                <NextLink href="#projects">
-                                    <MenuItem as={Link}>Projects</MenuItem>
-                                </NextLink>
                                 <NextLink href="#about">
                                     <MenuItem as={Link}>About</MenuItem>
+                                </NextLink>
+                                <NextLink href="#skills">
+                                    <MenuItem as={Link}>Skills</MenuItem>
+                                </NextLink>
+                                <NextLink href="#projects">
+                                    <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
                                 <NextLink href="#contact">
                                     <MenuItem as={Link}>Contact</MenuItem>

@@ -13,7 +13,7 @@ import {
 
 const Skills = () => {
     return (
-        <Box>
+        <Box w="100%" pb={6} id="skills">
             <Container w="100%" maxW="container.md">
                 <Heading as="h1" variant="section-title" pb={3}>
                     Skills
