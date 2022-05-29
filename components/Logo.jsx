@@ -22,6 +22,7 @@ const Logo = () => {
                 <LogoBox>
                     <Image src={logoImg} alt="logo" width={20} height={20} />
                     <Text
+                        id="/"
                         cursor="pointer"
                         color={useColorModeValue("blue.700", "blue.500")}
                         fontFamily="M PLUS Rounded 1c, sans-serif"
