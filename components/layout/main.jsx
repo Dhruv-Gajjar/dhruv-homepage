@@ -12,6 +12,11 @@ const Main = ({ children }) => {
                 />
                 <meta name="description" content="Dhruv's homepage" />
                 <meta name="author" content="Dhruv Gajjar" />
+                <link
+                    rel="shortcut icon"
+                    href="/favicon.ico.svg"
+                    type="image/x-icon"
+                />
                 <title>Dhruv Gajjar - Homepage</title>
             </Head>
 
