@@ -1,3 +1,4 @@
+import NextLink from "next/link";
 import Layout from "../components/layout/article";
 import {
   Box,
@@ -5,8 +6,10 @@ import {
   Heading,
   Text,
   VStack,
+  Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
@@ -40,7 +43,20 @@ const Home = () => {
             css={{ backdropFilter: "blur(10px)" }}
             textTransform="capitalize"
           >
-            a creative fron-end developer
+            a creative front-end developer
+          </Box>
+
+          <Box pt={5} w="full" align="left">
+            <NextLink href="#contact">
+              <Button
+                scale={1.2}
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                size="md"
+              >
+                Contact Me
+              </Button>
+            </NextLink>
           </Box>
         </VStack>
       </Container>
