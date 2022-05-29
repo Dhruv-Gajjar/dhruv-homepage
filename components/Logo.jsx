@@ -23,7 +23,7 @@ const Logo = () => {
                     <Image src={logoImg} alt="logo" width={20} height={20} />
                     <Text
                         cursor="pointer"
-                        color={useColorModeValue("gray.800", "whiteAlpha.900")}
+                        color={useColorModeValue("blue.700", "blue.500")}
                         fontFamily="M PLUS Rounded 1c, sans-serif"
                         fontWeight="bold"
                         ml={3}
