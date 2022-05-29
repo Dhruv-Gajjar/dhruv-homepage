@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Navbar from "../Navbar";
-import Font from "../Font";
 import { Box, Container } from "@chakra-ui/react";
 
 const Main = ({ children }) => {
@@ -17,7 +16,6 @@ const Main = ({ children }) => {
             </Head>
 
             <Navbar />
-            <Font />
 
             <Container maxW="container.md" pt={20}>
                 {children}
