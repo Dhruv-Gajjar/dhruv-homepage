@@ -9,13 +9,16 @@ import {
   Button,
   useColorModeValue,
 } from "@chakra-ui/react";
+import About from "./about";
+import Skills from "./skills";
+import Projects from "./projects";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Home = () => {
   return (
     <Layout>
       <Container>
-        <VStack w="100%" h="80vh" align="center" justify="center">
+        <VStack w="100%" h="80vh" align="center" justify="center" id="home">
           <Box>
             <Heading as="h1" size={{ base: "3xl", md: "4xl" }}>
               Hi I&apos;m
@@ -59,6 +62,10 @@ const Home = () => {
             </NextLink>
           </Box>
         </VStack>
+
+        <About />
+        <Skills />
+        <Projects />
       </Container>
     </Layout>
   );
