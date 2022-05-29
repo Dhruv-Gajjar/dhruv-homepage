@@ -11,11 +11,7 @@ import {
     Button,
     Flex,
 } from "@chakra-ui/react";
-import {
-    AiFillGithub,
-    AiTwotoneMail,
-    AiFillTwitterCircle,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
 
 const Contact = () => {
     return (
@@ -43,52 +39,80 @@ const Contact = () => {
                         </GridItem>
 
                         <GridItem>
-                            <Text pb={4} fontWeight="bold" fontSize="2xl">
+                            <Text pb={4} fontWeight="bold" fontSize="xl">
                                 Contact Me With
                             </Text>
 
-                            <Flex align="center" justify="space-between">
-                                <a
-                                    href="https://github.com/Dhruv-Gajjar"
-                                    target="_blank"
-                                >
-                                    <AiFillGithub size={20} />
-                                </a>
-                                <a>
-                                    <AiTwotoneMail size={20} />
-                                </a>
-                                <a
-                                    href="https://twitter.com/DhruvGajjar_7"
-                                    target="_blank"
-                                >
-                                    <AiFillTwitterCircle size={20} />
-                                </a>
+                            <Flex align="center" justify="start">
+                                <Box>
+                                    <a
+                                        href="https://github.com/Dhruv-Gajjar"
+                                        target="_blank"
+                                    >
+                                        <AiFillGithub size={25} />
+                                    </a>
+                                </Box>
+
+                                <Box ml={6}>
+                                    <a
+                                        href="https://twitter.com/DhruvGajjar_7"
+                                        target="_blank"
+                                    >
+                                        <AiFillTwitterCircle size={25} />
+                                    </a>
+                                </Box>
                             </Flex>
                         </GridItem>
                     </SimpleGrid>
                 </GridItem>
 
                 {/*right*/}
-                <GridItem w="full" h="full" colSpan={3}>
-                    <Flex align="center" justify="center" direction="column">
-                        <Box pb={4}>
-                            <Input placeholder="Enter your email..." />
-                        </Box>
-                        <Box pb={4}>
-                            <Textarea placeholder="message me..." />
-                        </Box>
+                <GridItem w="100%" h="full" colSpan={3}>
+                    <Flex align="left" justify="center" direction="column">
+                        <form action="POST" data-netlify="true">
+                            <Flex w="100%" align="left" justify="space-between">
+                                <Box pb={4} pr={4}>
+                                    <lable for="email">Name</lable>
+                                    <Input
+                                        type="text"
+                                        name="name"
+                                        mt={3}
+                                        placeholder="Enter your name..."
+                                    />
+                                </Box>
 
-                        <Box align="left">
-                            <a>
-                                <Button
-                                    type="submit"
-                                    size="sm"
-                                    colorScheme="teal"
-                                >
-                                    Submit{" "}
-                                </Button>
-                            </a>
-                        </Box>
+                                <Box pb={4}>
+                                    <lable for="email">Email</lable>
+                                    <Input
+                                        type="text"
+                                        name="email"
+                                        mt={3}
+                                        placeholder="Enter your email..."
+                                    />
+                                </Box>
+                            </Flex>
+                            <Box pb={4}>
+                                <lable for="message">Message</lable>
+                                <Textarea
+                                    type="text"
+                                    name="message"
+                                    mt={3}
+                                    placeholder="Type your message here..."
+                                />
+                            </Box>
+
+                            <Box align="left">
+                                <a>
+                                    <Button
+                                        align="center"
+                                        type="submit"
+                                        colorScheme="teal"
+                                    >
+                                        Submit{" "}
+                                    </Button>
+                                </a>
+                            </Box>
+                        </form>
                     </Flex>
                 </GridItem>
             </SimpleGrid>
