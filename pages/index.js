@@ -18,7 +18,14 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 const Home = () => {
   return (
     <Layout>
-      <VStack w="100%" h="80vh" align="center" justify="center" id="home">
+      <VStack
+        w="100%"
+        h="80vh"
+        pt={10}
+        align="center"
+        justify="center"
+        id="home"
+      >
         <Box>
           <Heading as="h1" size={{ base: "3xl", md: "4xl" }}>
             Hi I&apos;m
@@ -47,6 +54,14 @@ const Home = () => {
           textTransform="capitalize"
         >
           a creative front-end developer
+        </Box>
+
+        <Box pt={4} align="left">
+          <Text fontSize="lg">
+            I&apos;m a front-end web developer focused on building exceptional
+            digital experiences. Building modern UI with a responsive design
+            layout. Currently aiming to become a full-stack web developer.
+          </Text>
         </Box>
 
         <Box pt={5} w="full" align="left">
