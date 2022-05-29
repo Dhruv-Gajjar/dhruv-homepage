@@ -21,7 +21,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href;
     const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
     return (
-        <NextLink href={href} scroll={false}>
+        <NextLink href={href} scroll={true}>
             <Link
                 p={2}
                 bg={active ? "glassTeal" : undefined}
@@ -57,7 +57,9 @@ const Navbar = (props) => {
             >
                 <Flex mr={5} align="center">
                     <Heading as="h1" size="lg" letterSpacing="tight">
-                        <Logo />
+                        <NextLink href="#home">
+                            <Logo />
+                        </NextLink>
                     </Heading>
                 </Flex>
 
