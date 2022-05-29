@@ -56,7 +56,7 @@ const Navbar = (props) => {
                 wrap="wrap"
             >
                 <Flex mr={5} align="center">
-                    <Heading as="h1" size="lg" letterSpacing="tighter">
+                    <Heading as="h1" size="lg" letterSpacing="tight">
                         <Logo />
                     </Heading>
                 </Flex>
