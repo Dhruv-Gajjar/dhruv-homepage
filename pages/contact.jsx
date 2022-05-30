@@ -19,6 +19,12 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+    const handelSubmit = (e) => {
+        e.preventDefault();
+
+        const contactForm = { name, email, message };
+    };
+
     return (
         <Box w="100%" h="100%" pb={6} id="contact">
             <Heading pb={6} as="h2" variant="section-title">
@@ -76,7 +82,17 @@ const Contact = () => {
                 {/*right*/}
                 <GridItem w="100%" h="full" colSpan={3}>
                     <Flex align="left" justify="center" direction="column">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form
+                            onSubmit={handelSubmit}
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                        >
+                            <input
+                                type="hidden"
+                                name="form-name"
+                                value="contact"
+                            />
                             <Flex w="100%" align="left" justify="space-between">
                                 <Box pb={4} pr={4}>
                                     <lable>
