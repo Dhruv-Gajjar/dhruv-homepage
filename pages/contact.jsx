@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
     Box,
     Container,
@@ -14,6 +15,10 @@ import {
 import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
     return (
         <Box w="100%" h="100%" pb={6} id="contact">
             <Heading pb={6} as="h2" variant="section-title">
@@ -80,7 +85,10 @@ const Contact = () => {
                                             type="text"
                                             name="name"
                                             mt={3}
-                                            value="contact"
+                                            value={name}
+                                            onChange={(e) =>
+                                                setName(e.target.value)
+                                            }
                                         />
                                     </lable>
                                 </Box>
@@ -92,7 +100,10 @@ const Contact = () => {
                                             type="email"
                                             name="email"
                                             mt={3}
-                                            value="contact"
+                                            value={email}
+                                            onChange={(e) =>
+                                                setEmail(e.target.value)
+                                            }
                                         />
                                     </lable>
                                 </Box>
@@ -103,7 +114,10 @@ const Contact = () => {
                                     <Textarea
                                         name="message"
                                         mt={3}
-                                        value="contact"
+                                        value={message}
+                                        onChange={(e) =>
+                                            setMessage(e.target.value)
+                                        }
                                     />
                                 </lable>
                             </Box>
