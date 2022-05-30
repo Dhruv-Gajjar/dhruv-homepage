@@ -19,9 +19,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handelSubmit = (e) => {
-        e.preventDefault();
-
+    const handelSubmit = () => {
         const contactForm = { name, email, message };
     };
 
