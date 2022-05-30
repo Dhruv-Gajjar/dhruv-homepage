@@ -71,7 +71,7 @@ const Contact = () => {
                 {/*right*/}
                 <GridItem w="100%" h="full" colSpan={3}>
                     <Flex align="left" justify="center" direction="column">
-                        <form action="POST" data-netlify="true">
+                        <form method="POST" data-netlify="true">
                             <Flex w="100%" align="left" justify="space-between">
                                 <Box pb={4} pr={4}>
                                     <lable htmlFor="email">Name</lable>
