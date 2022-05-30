@@ -76,12 +76,7 @@ const Contact = () => {
                                 <Box pb={4} pr={4}>
                                     <lable>
                                         Name
-                                        <Input
-                                            type="text"
-                                            name="name"
-                                            mt={3}
-                                            placeholder="Enter your name..."
-                                        />
+                                        <Input type="text" name="name" mt={3} />
                                     </lable>
                                 </Box>
 
@@ -92,7 +87,6 @@ const Contact = () => {
                                             type="email"
                                             name="email"
                                             mt={3}
-                                            placeholder="Enter your email..."
                                         />
                                     </lable>
                                 </Box>
@@ -100,11 +94,7 @@ const Contact = () => {
                             <Box pb={4}>
                                 <lable>
                                     Message
-                                    <Textarea
-                                        name="message"
-                                        mt={3}
-                                        placeholder="Type your message here..."
-                                    />
+                                    <Textarea name="message" mt={3} />
                                 </lable>
                             </Box>
 
