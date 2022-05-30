@@ -74,33 +74,38 @@ const Contact = () => {
                         <form method="POST" data-netlify="true">
                             <Flex w="100%" align="left" justify="space-between">
                                 <Box pb={4} pr={4}>
-                                    <lable htmlFor="email">Name</lable>
-                                    <Input
-                                        type="text"
-                                        name="name"
-                                        mt={3}
-                                        placeholder="Enter your name..."
-                                    />
+                                    <lable>
+                                        Name
+                                        <Input
+                                            type="text"
+                                            name="name"
+                                            mt={3}
+                                            placeholder="Enter your name..."
+                                        />
+                                    </lable>
                                 </Box>
 
                                 <Box pb={4}>
-                                    <lable htmlFor="email">Email</lable>
-                                    <Input
-                                        type="text"
-                                        name="email"
-                                        mt={3}
-                                        placeholder="Enter your email..."
-                                    />
+                                    <lable>
+                                        Email
+                                        <Input
+                                            type="email"
+                                            name="email"
+                                            mt={3}
+                                            placeholder="Enter your email..."
+                                        />
+                                    </lable>
                                 </Box>
                             </Flex>
                             <Box pb={4}>
-                                <lable htmlFor="message">Message</lable>
-                                <Textarea
-                                    type="text"
-                                    name="message"
-                                    mt={3}
-                                    placeholder="Type your message here..."
-                                />
+                                <lable>
+                                    Message
+                                    <Textarea
+                                        name="message"
+                                        mt={3}
+                                        placeholder="Type your message here..."
+                                    />
+                                </lable>
                             </Box>
 
                             <Box align="left">
