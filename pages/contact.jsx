@@ -76,7 +76,12 @@ const Contact = () => {
                                 <Box pb={4} pr={4}>
                                     <lable>
                                         Name
-                                        <Input type="text" name="name" mt={3} />
+                                        <Input
+                                            type="text"
+                                            name="name"
+                                            mt={3}
+                                            value="contact"
+                                        />
                                     </lable>
                                 </Box>
 
@@ -87,6 +92,7 @@ const Contact = () => {
                                             type="email"
                                             name="email"
                                             mt={3}
+                                            value="contact"
                                         />
                                     </lable>
                                 </Box>
@@ -94,7 +100,11 @@ const Contact = () => {
                             <Box pb={4}>
                                 <lable>
                                     Message
-                                    <Textarea name="message" mt={3} />
+                                    <Textarea
+                                        name="message"
+                                        mt={3}
+                                        value="contact"
+                                    />
                                 </lable>
                             </Box>
 
