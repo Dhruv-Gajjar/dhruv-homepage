@@ -2,7 +2,6 @@ import NextLink from "next/link";
 import Layout from "../components/layout/article";
 import {
   Box,
-  Container,
   Heading,
   Text,
   VStack,
