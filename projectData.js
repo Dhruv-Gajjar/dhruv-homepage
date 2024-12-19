@@ -1,18 +1,19 @@
 export const data = [
   {
     id: 1,
-    name: "Portfolio Website",
-    img: "/images/portfolio-website.png",
-    stack: ["Nextjs", "ChakraUI", "TailwindCss"],
-    githubLink: "https://github.com/Dhruv-Gajjar/dhruv-homepage",
-    liveLink: "https://dhruv-homepage.netlify.app/",
+    name: "Krisihin Furniture",
+    img: "/images/Krishin-Furniture.png",
+    stack: ["ReactJS, Nextjs", "ChakraUI", "TailwindCss"],
+    githubLink: "",
+    liveLink: "https://krishin-furniture.netlify.app/",
   },
   {
     id: 2,
     name: "Freelancing Website",
     img: "/images/igrmaha.PNG",
     stack: ["Reactjs", "MaterialUI", "EmailJs"],
-    liveLink: "https://www.igrmaha.in/",
+    githubLink: "",
+    liveLink: "https://igrmaha.netlify.app/",
   },
   {
     id: 3,

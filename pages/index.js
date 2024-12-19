@@ -1,18 +1,18 @@
-import NextLink from "next/link";
-import Layout from "../components/layout/article";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
   Box,
+  Button,
   Heading,
   Text,
-  VStack,
-  Button,
   useColorModeValue,
+  VStack,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
+import Layout from "../components/layout/article";
 import About from "./about";
-import Skills from "./skills";
-import Projects from "./projects";
 import Contact from "./contact";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import Projects from "./projects";
+import Skills from "./skills";
 
 const Home = () => {
   return (
@@ -52,14 +52,14 @@ const Home = () => {
           css={{ backdropFilter: "blur(10px)" }}
           textTransform="capitalize"
         >
-          a creative front-end developer
+          a creative full-stack developer
         </Box>
 
         <Box pt={4} align="left">
           <Text fontSize="lg">
-            I&apos;m a front-end web developer focused on building exceptional
-            digital experiences. Building modern UI with a responsive design
-            layout. Currently aiming to become a full-stack web developer.
+            I&apos;m a full-stack developer focused on building exceptional
+            digital experiences. Building web-apps with a responsive design
+            layout. Currently working on progressive full-stack solutions.
           </Text>
         </Box>
 
